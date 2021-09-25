@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Seller's Portal</title>
+   <style>
+      legend {
+         font-size: 21px;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Seller's Portal</h1>
+   <h2>Stock Entry</h2>
+   <form action="upload_b.php" method="post">
+      <fieldset>
+         <legend><b>Bags Stock Entry:</b></legend>
+         <label for="brand_b">Brand Name: </label><br />
+         <input type="text" id="brand_b" name="brand_b" /><br /><br />
+         <label for="type_b">Type: </label><br />
+         <input type="radio" id="type_b" name="type_b" value="school" />School Bag
+         <input type="radio" id="type_b" name="type_b" value="office" />Office Bag<br /><br />
+         <label for="b_MRP">MRP: </label><br />
+         <input type="number" id="b_MRP" name="b_MRP"><br><br><br />
+         <label for="barcode_b">Barcode No. </label><br />
+         <input type="number" id="barcode_b" name="barcode_b"><br /><br>
+         <label for="quantity_b">Quantity: </label><br />
+         <input type="number" id="quantity_b" name="quantity_b"><br /><br>
+         <input type="submit" value="Upload">
+      </fieldset>
+   </form>
+   <form action="upload_s.php" method="post">
+      <fieldset>
+         <legend><b>Stationary Stock Entry:</b></legend>
+         <label for="s_name">Name: </label><br />
+         <input type="text" id="s_name" name="s_name" /><br /><br />
+         <label for="s_type">Type: </label><br />
+         <input type="radio" id="s_type" name="s_type" value="school" />School
+         <input type="radio" id="s_type" name="s_type" value="general" />General<br /><br />
+         <label for="brand_s">Brand Name: </label><br />
+         <input type="text" id="brand_s" name="brand_s"><br /><br />
+         <label for="s_MRP">MRP: </label><br />
+         <input type="number" id="s_MRP" name="s_MRP"><br><br><br />
+         <label for="barcode_s">Barcode No. </label><br />
+         <input type="number" id="barcode_s" name="barcode_s"><br /><br>
+         <label for="quantity_s">Quantity: </label><br />
+         <input type="number" id="quantity_s" name="quantity_s"><br /><br>
+         <input type="submit" value="Upload">
+      </fieldset>
+   </form>
+   <form action="upload_bo.php" method="post">
+      <fieldset>
+         <legend><b>Books Stock Entry:</b></legend>
+         <label for="bo_name">Name Of The Book: </label><br />
+         <textarea id="bo_name" name="bo_name" rows="2" cols="20"></textarea><br><br>
+
+         <label for="publisher">Publisher: </label><br />
+         <input type="text" id="publisher" name="publisher" /><br /><br />
+         <label for="author">Author: </label><br />
+         <input type="text" id="author" name="author" /><br /><br />
+         <label for="bo_MRP">MRP: </label><br />
+         <input type="number" id="bo_MRP" name="bo_MRP" <br><br><br />
+         <label for="bo_barcode">Barcode No. </label><br />
+         <input type="number" id="bo_barcode" name="bo_barcode"><br /><br>
+         <label for="quantity_bo">Quantity: </label><br />
+         <input type="number" id="quantity_bo" name="quantity_bo"><br /><br>
+         <input type="submit" value="Upload">
+      </fieldset>
+   </form>
+</body>
+
+</html>

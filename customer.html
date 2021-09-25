@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer's Portal</title>
+    <style>
+        form {
+            height: 100%;
+        }
+
+        fieldset {
+            background-image: url('websitename.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            width: 40%;
+
+        }
+
+        legend {
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bookstore.com</h1>
+    <h2>Fill Below Details Of Customer!</h2>
+    <form action="upload.php" method="post">
+        <fieldset>
+            <legend><b>Details:</b></legend>
+
+            <label for="name">Customer Name: </label><br />
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="payment_method">Select Payment Method:</label><br>
+            <select name="payment_method" id="payment_method" style="width:160px">
+                <option value="cash">Cash</option>
+                <option value="UPI">UPI</option>
+                <option value="netbanking">Netbanking</option>
+                <option value="debit">Debit Card</option>
+                <option value="credit">Credit Card</option>
+
+            </select><br><br>
+            <label for="price">Total Price: </label><br />
+            <input type="number" id="price" name="price"><br><br><br />
+            <label for="cust_ID">Enter Customer ID </label><br />
+            <input type="number" id="cust_ID" name="cust_ID"><br /><br>
+            <input type="submit" value="Upload" onclick="">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
